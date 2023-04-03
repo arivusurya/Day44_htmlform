@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Form-Validation</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form action="">
+        <header class="header-container">HTML Input Form</header>
+        <div class="text">
+            <label for="text">Type your Name: </label>
+            <input type="text" class="text" id="text" placeholder="Enter Your Name" >
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div >
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+            <error-output id="erro-pwd"></error-output>
+        </div>
+        <div>
+            <label for="email">
+                Email: </label>
+                <input type="email" id="email" name="email" placeholder="yourname@example.com">
+                <error-output id="email-error" ></error-output>
+        </div>
+        <div>
+            <label for="url">Enter your Url :</label>
+            <input type="url" name="url" id="url" placeholder="https://www.example.com">
+            <error-output id="url-error"></error-output>
+        </div>
+        <div>
+            <label for="number">enter the number </label>
+            <input type="number" name="number" id="number">
+
+        </div>
+        <div>
+            <label for="tel">Telephone No: </label>
+            <input type="tel" id="tel" name="tel" placeholder="your telephone Number...">
+            <error-output id="tel-error"></error-output>
+        </div>
+        <div>
+            <label for="search">Search input : </label>
+            <input type="search" name="search" id="search">
+        </div>
+
+        <div class="dateime-container">
+            <label for="dateandtime">Choose date and time</label>
+            <input type="datetime-local" name="dateandtime" id="dateandtime">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="range" min="30000" max="40000" step="100" value="40000" id="salary" name="salary">
+            <output class="salary-output" for="salary">40000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+
+    </form>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
