@@ -40,7 +40,7 @@ email.addEventListener('input',()=>{
  const pwd = document.querySelector("#pwd")
  const pwderror = document.querySelector("#error-pwd")
  pwd.addEventListener("input",()=>{
-    let pwdregex = RegExp("[A-Z a-z]{8,}")
+    let pwdregex = RegExp("^(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=]){1}.{8,}$")
     if(pwdregex.test(pwd.value))
         pwderror.textContent=""
     else
