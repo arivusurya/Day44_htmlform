@@ -18,11 +18,21 @@ salary.addEventListener("input",()=>{
 
 const email = document.querySelector("#email")
 const email_error = document.querySelector("#email-error")
-
 email.addEventListener('input',()=>{
     const emailregex= RegExp("^[A-Za-z0-9]+(.[a-zA-Z0-9]+)?@[a-zA-Z]+.[a-zA-Z]{2,}(.[A-Za-z]{2,})?$")
     if(emailregex.test(email.value))
         email_error.textContent=""
     else
         email_error.textContent="Email is invalid"
+ })
+
+
+ const PhoneNum = document.querySelector("#tel")
+ const pherror = document.querySelector("#tel-error")
+ PhoneNum.addEventListener("input",()=>{
+    let phregex = RegExp("^[1-9]{2}[ ]?[6789]{1}[0-9]{9}$")
+    if(phregex.test(PhoneNum.value))
+        pherror.textContent=""
+    else
+        pherror.textContent="Not a valif Phone Number"
  })
